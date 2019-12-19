@@ -65,6 +65,10 @@ body {
 	margin: 5%;
 }
 
+nav > hr {
+	display: none;
+}
+
 .navcontainer  {
 	display: flex;
 	width: 100%;
@@ -129,33 +133,28 @@ nav .logo {
 	margin: 5%;
 }
 
-.top-header {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-.top-header > h2 {
-	width: 9%;
-}
-
 .features {
 	display: flex;
 	margin-right: 43%;
 }
 
-.top-content {
+.top-section {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	width: 100%;
-	justify-content: space-between; 
-	padding-right: 
 }
 
-.top-content > p {
-	width: 48%;
+.left-section {
+	display: flex;
+	flex-direction: column;
+	padding-right: 2%;
 }
 
+.right-section {
+	display: flex;
+	flex-direction: column; 
+}
 
 .middle-img {
 	display: flex;
@@ -165,33 +164,17 @@ nav .logo {
 	width: 100%;
 }
 
-.bottom-header {
+.bottom-section {
 	display: flex;
-	width: 100%;
+	flex-direction: row;
 }
 
-.bottom-header > h2 {
-	width: 34%;
-	justify-content: flex-start;
+.bottom-left {
+	padding-right: 3%;
 }
 
-.bottomleft {
-	padding-right: 27%;
-}
-
-.bottommiddle {
-	padding-right: 27%;
-}
-
-.bottom-content {
-	display: flex;
-	justify-content: space-between;
-}
-
-.bottom-content > p {;
-	display: flex;
-	justify-content: center;
-	width: 32%;
+.bottom-middle {
+	padding-right: 3%;
 }
 
 .breakline {
@@ -221,28 +204,12 @@ nav .logo {
 		margin: 3%;
 	}
 
-	.top-header > h2 {
-		width: 50%;
-		margin-left: 2%;
-		margin-right: 2%;
+	.top-section > section {
+		padding: 2%;
 	}
 
-	.top-content > p {
-		width: 48%;
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-	
-	.bottom-content > p {;
-		width: 30%;
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-
-	.bottom-header > h2 {
-		width: 30%;
-		margin-left: 2%;
-		margin-right: 2%;
+	.bottom-section > section {
+		padding: 2%;
 	}
 }
 
@@ -251,4 +218,59 @@ nav .logo {
 		display: none;
 	}
 
+	.navcontainer > nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav {
+		display: flex;
+		padding: 10%;
+		height: 30vh;
+	}
+
+	nav > a {
+		font-size: 20px;
+	}
+
+	nav > hr {
+		display: block;
+		width: 100%;
+		color: black;
+	}
+
+	.top-section {
+		flex-direction: column;
+	}
+
+	.left-section > h2 {
+		padding-top: 5%;
+	}
+
+	.left-section {
+		margin-bottom: 5%;
+	}
+
+	.right-section > p {
+		margin-bottom: 5%;
+	}
+
+	.bottom-section {
+		flex-direction: column;
+	}
+
+	.bottom-left {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.bottom-middle {
+		margin-bottom: 5%;
+	}
+
+	.contactheader {
+		margin-top: 8%;
+	}
+	}
 }
