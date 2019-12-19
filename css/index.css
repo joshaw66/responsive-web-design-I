@@ -136,13 +136,16 @@ nav .logo {
 	justify-content: flex-start;
 }
 
+.top-header > h2 {
+	width: 9%;
+}
+
 .features {
 	display: flex;
 	margin-right: 43%;
 }
 
 .top-content {
-	border: solid;
 	display: flex;
 	width: 100%;
 	justify-content: space-between; 
@@ -150,7 +153,6 @@ nav .logo {
 }
 
 .top-content > p {
-	border: solid;
 	width: 48%;
 }
 
@@ -186,8 +188,7 @@ nav .logo {
 	justify-content: space-between;
 }
 
-.bottom-content > p {
-	border: solid;
+.bottom-content > p {;
 	display: flex;
 	justify-content: center;
 	width: 32%;
@@ -216,7 +217,33 @@ nav .logo {
 		flex-direction: column-reverse;
 	}
 
+	.logo {
+		margin: 3%;
+	}
 
+	.top-header > h2 {
+		width: 50%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.top-content > p {
+		width: 48%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	.bottom-content > p {;
+		width: 30%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.bottom-header > h2 {
+		width: 30%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 }
 
 @media (max-width: 500px) {
